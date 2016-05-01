@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Web Form</title>
+        <link href="bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet"/>
+        <link href="stylesheet.css" type="text/css" rel="stylesheet"/>
+        <script src="javascript/jquery-2.2.3.min.js" type="text/javascript"></script>
+        <script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="javascript/scripts.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <nav>
+            
+        </nav>
+        
+        <main>
+            <article>
+                <section>
+                    <header>
+
+                    </header>
+                    
+                        <form target="_self" id="formcontrol" name="webForm">
+                            <section>
+                            <p>Required fields are followed by <strong><abbr title="required">*</abbr></strong>.</p>
+                            <h2>Personal Information</h2>
+                            <fieldset>
+                                    
+                                <legend>Your Name</legend>
+                                <p>
+                                    <label for="firstName">First Name:
+                                        <input type="text" id="firstName" name="firstName" placeholder="John" required autofocus aria-labledby="firstName">
+                                        <strong><abbr title="required">*</abbr></strong>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label for="lastName">Last Name:
+                                        <input type="text" id="lastName" name="lastName" placeholder="Philips" required aria-labledby="lastName">
+                                        <strong><abbr title="required">*</abbr></strong>
+                                    </label>
+
+                                    <br><br>
+                                    <label for="exampleName">Example Name:
+                                        <input type="text" id="exampleName" name="nameExample" value="Bob Frankie" disabled aria-labledby="exampleName">
+                                    </label>
+                                </p>
+                                <p>
+                                    <label for="emailInfo">Email: 
+                                        <input type="email" name="emailInfo" id="emailInfo" required placeholder="example@mail.com">
+                                        <strong><abbr title="required">*</abbr></strong>
+                                    </label>
+                                </p>
+                            </fieldset>
+                        </section>
+                        <section>
+                            <fieldset>
+                                <legend>Contact Information</legend>
+                                <p>
+                                    <label for="phoneNumber">Phone Number:
+                                        <input type="tel" placeholder="203-222-9999" pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$" required>
+                                        <strong><abbr title="required">*</abbr></strong>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label for="phoneNumber">Optional Phone:
+                                        <input type="tel" placeholder="203-222-9999" pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$">
+                                    </label>
+                                </p>
+                            </fieldset>
+                        </section>
+                        <section>
+                            <h2>About Yourself</h2>
+                            <fieldset>
+                                <legend>Physical Traits</legend>
+                                <p>
+                                    <label for="personAge">Age:
+                                        <input type="number" min="0" max="100" required>
+                                        <strong><abbr title="required">*</abbr></strong>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label for="personHair">Hair Color:
+                                        <select name="Hair">
+                                            <option value="Please Select Below">Please Select Below</option>
+                                            <option value="Black">Black</option>
+                                            <option value="Brown">Brown</option>
+                                            <option value="Purple">Purple</option>
+                                        </select>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label for="personHair">Eye Color:
+                                        <select name="Eye">
+                                            <option value="Please Select Below">Please Select Below</option>
+                                            <option value="Black">Black</option>
+                                            <option value="Brown">Brown</option>
+                                            <option value="Purple">Purple</option>
+                                            <optgroup label="Double">
+                                                <option value="Red & Blue">Red & Blue</option>
+                                                <option value="Green & Blue">Green & Blue</option>
+                                                <option value="Brown & Yellow">Brown & Yellow</option>
+                                            </optgroup>
+                                            <option value="Green">Green</option>
+                                            <option value="Multi">Multi</option>
+                                        </select>
+                                        
+                                    </label>
+                                </p>
+                                <p>
+                                    <label for="myHair">What is your favorite Hair Color?</label>
+                                    <input type="text" id="myHair" name="HairList" list="additionalHair" />
+                                    <datalist id="additionalHair">
+                                            <label for="additionalhair">Secondary Hair:</label>
+                                                <select id="additionalhair">
+                                                    <option value="Black">Black</option>
+                                                    <option value="Brown">Brown</option>
+                                                    <option value="Purple">Purple</option>
+                                                </select>
+                                            
+                                    </datalist>
+                                </p>
+                            </fieldset>
+                            <section>
+                                <h2>Whats on your mind?</h2>
+                                    <fieldset>
+                                        <legend>FeedBack</legend>
+                                        <label for="feedbackText">Please add additional information here:</label>
+                                            <p>
+                                                <textarea rows="10" cols="40" maxlength="255"></textarea>
+                                            </p>
+                                    </fieldset>
+                            </section>
+                            <input type="submit" value="Submit" id="submitButton" name="submitButton" onclick="alertSpace.infoConfirm();">
+                            <br><br>
+                            <input type="button" value="Reset Information" id="resetButton" name="resetButton" onclick="alertSpace.alertClass();">
+                        </section>
+                    </form>
+                </section>
+            </article>
+            
+        </main>
+        
+        <footer>
+        
+        </footer>
+    
+    </body>
+</html>
