@@ -1,6 +1,6 @@
 # Auto-Validation-Web-Form
 
-Description: Form that uses Auto Validiation with using JavaScript to apply valid or invalid styling. Bootstrap added for moblie responsiveness.
+<b>Description:</b> Form that uses Auto Validiation with using JavaScript to apply valid or invalid styling. Bootstrap added for moblie responsiveness.
 
 Development Check-List:
 - #Create Form Layout <b>(Done)</b>
