@@ -14,7 +14,7 @@ h2 {
 }
 form {
     margin: 0 auto;
-    width: 50%;
+    width: 45%;
     background-color: rgba(0,0,0,0.08);
     box-shadow: 0 0 1em black;
     padding: 0.5em;
@@ -27,6 +27,12 @@ fieldset {
 legend {
     font-size: 1.1em;
     font-weight: bold;
+    margin-left: 0.5em;
+    border-bottom: 0em;
+}
+#formcontrol label {
+    padding: 0.2em;
+    margin-left: 1em;
 }
 input[type=submit] {
     cursor: pointer;
@@ -56,8 +62,11 @@ input[type=button] {
     outline-color: rgba(0,200,255,0.5);
     transition: 0.2s ease;
 }
-textarea:focus {
+#formcontrol textarea:focus {
     font-size: 1.1em;
+}
+#formcontrol textarea {
+    margin-left: 0.5em;
 }
 #formcontrol input[type=text]:focus:required:invalid, #formcontrol input[type=email]:focus:invalid, #formcontrol input[type=tel]:focus:invalid {
     box-shadow: 0 0 5px #d45252;
@@ -68,11 +77,55 @@ textarea:focus {
     border-color: springgreen;
 }
 #formcontrol input {
-    width: 25%;
-    height: 2em;
+    width: 63%;
+    height: 2.5em;
+}
+#formcontrol input[type=tel] {
+    width: 45%;
+}
+#formcontrol input[type=number] {
+    width: 50%;
+}
+#formcontrol input#myHair {
+    width: 15%;
 }
 #resetButton {
     position: relative;
     left: 0.7em;
     box-shadow: 0 0 0.1em black;
+}
+#formcontrol input#resetButton, #formcontrol input#submitButton {
+    width: 25%;
+}
+@media screen and (max-width: 800px) {
+    #formcontrol input#resetButton, #formcontrol input#submitButton {
+        width: 60%;
+    }
+    #formcontrol textarea {
+        width: 95%;
+    }
+}
+@media screen and (max-width:780px) and (min-width: 700px) {
+    form {
+        width: 70%;
+    }
+    #formcontrol input#resetButton, #formcontrol input#submitButton {
+        width: 40%;
+    }
+}
+@media screen and (max-width: 500px) {
+    form {
+        width: 90%;
+    }
+    #formcontrol input#resetButton, #formcontrol input#submitButton {
+        width: 40%;
+    }
+}
+@media screen and (max-width: 350px) {
+    #formcontrol input#resetButton, #formcontrol input#submitButton {
+        width: 50%;
+    }
+    #formcontrol textarea {
+        width: 95%;
+    }
 }
