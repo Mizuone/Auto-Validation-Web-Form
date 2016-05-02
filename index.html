@@ -2,6 +2,8 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Web Form</title>
         <link href="bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet"/>
         <link href="stylesheet.css" type="text/css" rel="stylesheet"/>
@@ -20,8 +22,9 @@
                     <header>
 
                     </header>
-                    
-                        <form target="_self" id="formcontrol" name="webForm">
+                    <div class="row"> 
+                        <div class="col-sm-12">
+                            <form target="_self" id="formcontrol" name="webForm">
                             <section>
                             <p>Required fields are followed by <strong><abbr title="required">*</abbr></strong>.</p>
                             <h2>Personal Information</h2>
@@ -30,13 +33,13 @@
                                 <legend>Your Name</legend>
                                 <p>
                                     <label for="firstName">First Name:
-                                        <input type="text" id="firstName" name="firstName" placeholder="John" required autofocus aria-labledby="firstName">
+                                        <input type="text" id="firstName" name="firstName" placeholder="Kyle" required autofocus aria-labledby="firstName">
                                         <strong><abbr title="required">*</abbr></strong>
                                     </label>
                                 </p>
                                 <p>
                                     <label for="lastName">Last Name:
-                                        <input type="text" id="lastName" name="lastName" placeholder="Philips" required aria-labledby="lastName">
+                                        <input type="text" id="lastName" name="lastName" placeholder="Orlinski" required aria-labledby="lastName">
                                         <strong><abbr title="required">*</abbr></strong>
                                     </label>
 
@@ -75,7 +78,7 @@
                                 <legend>Physical Traits</legend>
                                 <p>
                                     <label for="personAge">Age:
-                                        <input type="number" min="0" max="100" required>
+                                        <input id="agefield" type="number" min="0" max="100" maxlength="3" required>
                                         <strong><abbr title="required">*</abbr></strong>
                                     </label>
                                 </p>
@@ -136,6 +139,9 @@
                             <input type="button" value="Reset Information" id="resetButton" name="resetButton" onclick="alertSpace.alertClass();">
                         </section>
                     </form>
+                        </div>
+                    </div>
+                        
                 </section>
             </article>
             
