@@ -4,7 +4,7 @@ if (typeof(alertSpace === "undefined")) {
 (function() {
     
     alertSpace.alertClass = function() {
-              if (confirm("You're resetting all your information, doing so will provide a blank form.") == true) {
+              if (confirm("You're resetting all your information, doing so will provide a blank form.") === true) {
                   console.log("Form reset!");
                   return document.getElementById("formcontrol").reset();
 
@@ -26,9 +26,16 @@ if (typeof(alertSpace === "undefined")) {
                 checkAll[i].style.backgroundColor = "rgba(0,255,0,0.2)";
             }
     }
+    alertSpace.ageRestriction = function() {
+        var ageValue = $("#agefield").val();
+        if (ageValue > 100) {
+            $("#formcontrol input[type=number]:nth-of-type(1)").val("100");
+        } 
+    }
     setInterval(function() {
         alertSpace.infoConfirm();
         alertSpace.checker();
+        alertSpace.ageRestriction();
     }, 1000);
     
 })();
