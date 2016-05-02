@@ -8,6 +8,6 @@ Development Check-List:
 - #Add Vaildation with built in form Attributes <b>(Done)</b>
 - #Create JavaScript to check if input fields are valid or invalid <b>(Done)</b>
 - #Style Form <b>(Done)</b>
-- #Style Form for mobile, using bootstrap
-- #Check Funtionality, Test
-- #Double Check
+- #Style Form for mobile, using bootstrap <b>(Done)</b>
+- #Check Funtionality, Test <b>(Done)</b>
+- #Double Check <b>(Done)</b>
